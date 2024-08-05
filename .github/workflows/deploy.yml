@@ -204,4 +204,4 @@ jobs:
             
             npm install -g pm2
             pm2 stop all
-            pm2 start /var/www/backend/index.js --name backend -p 3080'
+            pm2 start /var/www/backend/index.js --name backend'
