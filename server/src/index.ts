@@ -4,11 +4,12 @@ import { config } from "dotenv";
 config();
 
 const app: Express = express();
+app.use(express.json());
 
 app.set("port", process.env.PORT || 3000);
 
 app.get("/api/todo/:page", (req: Request, res: Response) => {
-  res.send("now testing");
+  res.json([{ content: "testing" }]);
 });
 
 app.listen(app.get("port"), () => {
