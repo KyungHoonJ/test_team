@@ -36,4 +36,7 @@ jobs:
             exit 1
           fi
 
-          nvm -v'
+          nvm -v
+          nvm use --lts
+          node -v
+          npm -v'
