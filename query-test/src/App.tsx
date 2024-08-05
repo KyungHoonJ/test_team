@@ -12,9 +12,7 @@ const App = (): JSX.Element => {
   const { data, isError, isPending } = useQuery<ITodo[]>({
     queryKey: "api/todo/1".split("/"),
     queryFn: async () => {
-      const { data } = await axios.get(
-        `http://localhost:3080/api/todo/${page}`
-      );
+      const { data } = await axios.get(`/api/todo/${page}`);
       console.log(data);
       return data;
     },

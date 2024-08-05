@@ -19,3 +19,8 @@ server {
     }
 }
 ```
+
+```bash
+echo "PORT=3080" > .env
+echo "SECRET='sdfaservaescrasebtrse'" >> .env
+```
