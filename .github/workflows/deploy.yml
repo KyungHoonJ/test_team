@@ -27,4 +27,4 @@ jobs:
 
       - name: test node
         run: ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} '
-          node -v'
+          nvm -v'
