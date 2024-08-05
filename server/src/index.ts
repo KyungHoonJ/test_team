@@ -9,6 +9,7 @@ app.use(express.json());
 app.set("port", process.env.PORT || 3000);
 
 app.get("/api/todo/:page", (req: Request, res: Response) => {
+  console.log("testing");
   res.json([{ content: "testing" }]);
 });
 
