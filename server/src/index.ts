@@ -1,7 +1,8 @@
 import express, { Express, Request, Response } from "express";
 import { config } from "dotenv";
+import path from "path";
 
-config();
+config({ path: path.join(__dirname, ".env") });
 
 const app: Express = express();
 app.use(express.json());
